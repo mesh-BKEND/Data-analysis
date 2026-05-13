@@ -1,39 +1,86 @@
-%PDF-1.4
-1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
-endobj
-2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
-endobj
-3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
-endobj
-4 0 obj
-<< /Length 105 >>
-stream
-BT
-/F1 18 Tf
-72 720 Td
-(Student Learning Analysis Report) Tj
-0 -36 Td
-/F1 12 Tf
-(Placeholder report. Replace with final analysis.) Tj
-ET
-endstream
-endobj
-5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
-endobj
-xref
-0 6
-0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000241 00000 n 
-0000000396 00000 n 
-trailer
-<< /Root 1 0 R /Size 6 >>
-startxref
-466
-%%EOF
+---online learners vs offline learners
+
+ +---------------+-----------+-----------+---------+-----------------+
+| Learning_Mode | std_hours | retention | Focus   | exam_perfomance |
++---------------+-----------+-----------+---------+-----------------+
+| Offline       |   4.62920 |   74.7200 | 71.7980 |         73.1360 |
+| Online        |   4.49780 |   70.6620 | 70.7240 |         70.2140 |
++---------------+-----------+-----------+---------+-----------------+
+
+--online vs offline learners as per subject
++---------------+-------------+-----------+-----------+---------+-----------------+
+| Learning_Mode | Subject     | std_hours | retention | Focus   | exam_perfomance |
++---------------+-------------+-----------+-----------+---------+-----------------+
+| Offline       | Science     |   4.28482 |   73.9821 | 70.6250 |         72.3304 |
+| Online        | Science     |   4.55825 |   71.9709 | 68.4175 |         69.6408 |
+| Offline       | Programming |   4.81809 |   76.8085 | 69.2872 |         72.9787 |
+| Online        | Programming |   4.77386 |   70.5455 | 68.9659 |         69.3636 |
+| Online        | Math        |   4.34167 |   68.5521 | 70.6667 |         69.3333 |
+| Offline       | Math        |   5.00000 |   72.2727 | 70.6566 |         70.8283 |
+| Offline       | History     |   4.51489 |   74.4787 | 72.2979 |         73.7234 |
+| Online        | History     |   4.36635 |   68.0481 | 72.7019 |         69.6346 |
+| Offline       | English     |   4.57822 |   76.2178 | 76.0891 |         75.8911 |
+| Online        | English     |   4.48073 |   73.8716 | 72.4862 |         72.7706 |
++---------------+-------------+-----------+-----------+---------+-----------------+
+
+-- Comparison of rentention score of online leaners over offline learners
++-------------+----------------------+
+| Subject     | retention_difference |
++-------------+----------------------+
+| English     |              -2.3463 |
+| Math        |              -3.7206 |
+| Science     |              -2.0113 |
+| Programming |              -6.2631 |
+| History     |              -6.4306 |
+--------------------------------------
+
+-- The perfomance of subjects             
+ +-------------+-----------------+     
+| Subject     | AVG(Exam_Score) |
++-------------+-----------------+
+| English     |         74.2714 |
+| History     |         71.5758 |
+| Programming |         71.2308 |
+| Science     |         71.0419 |
+| Math        |         70.0923 |
++-------------+-----------------+
+
+--perfomance of offline_students
++-------------+-----------------+
+| Subject     | exam_perfomance  |
++-------------+-----------------+
+| English     |         74.2714 |
+| History     |         71.5758 |
+| Programming |         71.2308 |
+| Science     |         71.0419 |
+| Math        |         70.0923 |
+
+--perfomance for online students
+
++-------------+-----------------+
+| Subject     | AVG(Exam_Score) |
++-------------+-----------------+
+| English     |         72.7706 |
+| Science     |         69.6408 |
+| History     |         69.6346 |
+| Programming |         69.3636 |
+| Math        |         69.3333 |
++-------------+-----------------+
+5 rows in set (0.0045 sec)
+
+
+-----------study efficiency of learners---------------
++-------------+-------------+---------------+
+| Subject     | efficiency | Learning_Mode |
++-------------+-------------+---------------+
+| English     | 0.061359603 | Offline       |
+| Science     | 0.061990446 | Offline       |
+| English     | 0.063062935 | Online        |
+| History     | 0.063285000 | Offline       |
+| History     | 0.063298653 | Online        |
+| Math        | 0.065592604 | Online        |
+| Science     | 0.068525048 | Online        |
+| Programming | 0.068758829 | Offline       |
+| Programming | 0.069675568 | Online        |
+| Math        | 0.073037070 | Offline       |
++-------------+-------------+---------------+
