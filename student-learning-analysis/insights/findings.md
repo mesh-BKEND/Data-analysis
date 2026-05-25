@@ -1,10 +1,14 @@
 # Findings
 
-## Initial Observations
+## Relationship for the overall students between the study hours and the retention_score
 
-- Students with higher attendance generally show stronger final exam performance.
-- Students studying 12 or more hours per week tend to appear among the highest performers.
-- Low attendance and low study hours are useful early indicators for academic support.
+--increase in study hour on average leads also to increase in retention score for all the subjects for both online and offline students
+
+## Relationship for online students between the study hours and the retention_score accross all subjects
+
+--increase in study hour on average leads also to increase in retention score for all the subjects for both online and offline students
+
+-
 
 ## Recommended Next Steps
 
